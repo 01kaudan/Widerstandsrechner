@@ -1,0 +1,3 @@
+# Widerstandsrechner
+
+//By daniel
