@@ -53,25 +53,100 @@ namespace Widerstände
         public void berechnung()
 
         {
-            int a; 
-           
-            if (farbring3.SelectedIndex.ToString() == "0")
+            int a = 0;
+            int zahl;
+            string ergebnis; 
+            
+            
+            
+            if (farbring3.SelectedText.ToString() == "0")
             {
 
                  farbring3.SelectedIndex = 1;
-                 a = Convert.ToInt32(farbring3);
+                 a = Convert.ToInt32(farbring3.SelectedIndex);
+                 
+            }
+
+            if (farbring3.SelectedText.ToString() == "1")
+            {
+
+                farbring3.SelectedIndex = 10;
+                a = Convert.ToInt32(farbring3.SelectedIndex);
 
             }
-            
-            int zahl;
+            if (farbring3.SelectedText.ToString() == "2")
+            {
+
+                farbring3.SelectedIndex = 100;
+                a = Convert.ToInt32(farbring3.SelectedIndex);
+
+            }
+
+            if (farbring3.SelectedText.ToString() == "3")
+            {
+
+                farbring3.SelectedIndex = 1000;
+                a = Convert.ToInt32(farbring3.SelectedIndex);
+
+            }
+
+            if (farbring3.SelectedText.ToString() == "4")
+            {
+
+                farbring3.SelectedIndex = 10000;
+                a = Convert.ToInt32(farbring3.SelectedIndex);
+
+            }
+
+            if (farbring3.SelectedText.ToString() == "5")
+            {
+
+                farbring3.SelectedIndex = 100000;
+                a = Convert.ToInt32(farbring3.SelectedIndex);
+
+            }
+
+            if (farbring3.SelectedText.ToString() == "6")
+            {
+
+                farbring3.SelectedIndex = 1000000;
+                a = Convert.ToInt32(farbring3.SelectedIndex);
+
+            }
+
+            if (farbring3.SelectedText.ToString() == "7")
+            {
+
+                farbring3.SelectedIndex = 10000000;
+                a = Convert.ToInt32(farbring3.SelectedIndex);
+
+            }
+
+            if (farbring3.SelectedText.ToString() == "8")
+            {
+
+                farbring3.SelectedIndex = 100000000;
+                a = Convert.ToInt32(farbring3.SelectedIndex);
+
+            }
+
+            if (farbring3.SelectedText.ToString() == "9")
+            {
+
+                farbring3.SelectedIndex = 1000000000;
+                a = Convert.ToInt32(farbring3.SelectedIndex);
+
+            }
+
+           
 
 
             textBox1.Text = farbring1.SelectedIndex.ToString() + farbring2.SelectedIndex.ToString();
+            zahl = Convert.ToInt32(textBox1.Text);
+            a = a * zahl;
 
-            zahl = Convert.ToInt32(textBox1);
-
-            a = a * zahl; 
-             
+            ergebnis = Convert.ToString(a);
+            ergebnis = textBox1.Text; 
 
 
         }
